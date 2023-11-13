@@ -29,4 +29,38 @@ service DeliveryService {
         DocumentDate,
         to_DeliveryDocumentItem : redirected to OutboundDeliveryItems,
     };
+
+// @readonly
+// entity MaterialDocs          as projection on API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentHeader {
+//     MaterialDocumentYear,
+//     MaterialDocument,
+//     GoodsMovementCode,
+//     to_MaterialDocumentItem : redirected to MaterialDocItems,
+// };
+
+// @readonly
+// entity MaterialDocItems      as projection on API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentItem {
+//     MaterialDocumentYear,
+//     MaterialDocument,
+//     MaterialDocumentItem,
+//     Plant,
+//     GoodsMovementType,
+//     IssuingOrReceivingPlant,
+//     IssuingOrReceivingStorageLoc,
+//     QuantityInEntryUnit,
+//     InvtryMgmtReferenceDocument,
+//     InvtryMgmtRefDocumentItem,
+//     ReferenceDocumentFiscalYear,
+//     to_MaterialDocumentHeader : redirected to MaterialDocs,
+//     to_SerialNumbers          : redirected to SerialNumbers,
+// };
+
+// @readonly
+// entity SerialNumbers         as projection on API_MATERIAL_DOCUMENT_SRV.A_SerialNumberMaterialDocument {
+//     Material,
+//     SerialNumber,
+//     MaterialDocument,
+//     MaterialDocumentItem,
+//     MaterialDocumentYear,
+// };
 }

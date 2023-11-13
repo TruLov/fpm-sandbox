@@ -21,13 +21,15 @@
     "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.1.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "cds-plugin-ui5": "^0.6.13"
   },
   "scripts": {
     "build:dts": "npx @cap-js/cds-typer '*' --outputDirectory @cds-models --logLevel TRACE",
     "dev": "cds-ts watch",
     "format": "prettier --write --ignore-unknown .",
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-deliveries": "cds watch --open deliveries/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "imports": {
     "#cds-models/*": "./@cds-models/*/index.js"
@@ -43,5 +45,11 @@
         "model": "srv/external/API_OUTBOUND_DELIVERY_SRV_V2"
       }
     }
-  }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/deliveries"
+  ]
 }

@@ -1,8 +1,8 @@
 // This is an automatically generated file. Please do not change its contents manually!
 import * as __ from './../_';
-export default { name: 'API_MATERIAL_DOCUMENT_SRV' }
+export default { name: 'API_MATERIAL_DOCUMENT_SRV' };
 export function _A_MaterialDocumentHeaderAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_MaterialDocumentHeader extends Base {
+    return class A_MaterialDocumentHeader extends Base {
         MaterialDocumentYear?: string;
         MaterialDocument?: string;
         InventoryTransactionType?: string;
@@ -21,18 +21,26 @@ export function _A_MaterialDocumentHeaderAspect<TBase extends new (...args: any[
         to_MaterialDocumentItem_MaterialDocumentYear?: string;
         to_MaterialDocumentItem_MaterialDocument?: string;
         to_MaterialDocumentItem_MaterialDocumentItem?: string;
-      static actions: {
-        Cancel: { (PostingDate: string): A_MaterialDocumentHeader, __parameters: {PostingDate: string}, __returns: A_MaterialDocumentHeader }
-    }
-  };
+        static actions: {
+            Cancel: {
+                (PostingDate: string): A_MaterialDocumentHeader;
+                __parameters: { PostingDate: string };
+                __returns: A_MaterialDocumentHeader;
+            };
+        };
+    };
 }
 export class A_MaterialDocumentHeader extends _A_MaterialDocumentHeaderAspect(__.Entity) {}
 export class A_MaterialDocumentHeader_ extends Array<A_MaterialDocumentHeader> {}
-Object.defineProperty(A_MaterialDocumentHeader, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentHeader' })
-Object.defineProperty(A_MaterialDocumentHeader_, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentHeader' })
+Object.defineProperty(A_MaterialDocumentHeader, 'name', {
+    value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentHeader',
+});
+Object.defineProperty(A_MaterialDocumentHeader_, 'name', {
+    value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentHeader',
+});
 
 export function _A_MaterialDocumentItemAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_MaterialDocumentItem extends Base {
+    return class A_MaterialDocumentItem extends Base {
         MaterialDocumentYear?: string;
         MaterialDocument?: string;
         MaterialDocumentItem?: string;
@@ -124,28 +132,35 @@ export function _A_MaterialDocumentItemAspect<TBase extends new (...args: any[])
         to_SerialNumbers_MaterialDocument?: string;
         to_SerialNumbers_MaterialDocumentItem?: string;
         to_SerialNumbers_MaterialDocumentYear?: string;
-      static actions: {
-        CancelItem: { (PostingDate: string): A_MaterialDocumentItem, __parameters: {PostingDate: string}, __returns: A_MaterialDocumentItem }
-    }
-  };
+        static actions: {
+            CancelItem: {
+                (PostingDate: string): A_MaterialDocumentItem;
+                __parameters: { PostingDate: string };
+                __returns: A_MaterialDocumentItem;
+            };
+        };
+    };
 }
 export class A_MaterialDocumentItem extends _A_MaterialDocumentItemAspect(__.Entity) {}
 export class A_MaterialDocumentItem_ extends Array<A_MaterialDocumentItem> {}
-Object.defineProperty(A_MaterialDocumentItem, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentItem' })
-Object.defineProperty(A_MaterialDocumentItem_, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentItem' })
+Object.defineProperty(A_MaterialDocumentItem, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentItem' });
+Object.defineProperty(A_MaterialDocumentItem_, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_MaterialDocumentItem' });
 
 export function _A_SerialNumberMaterialDocumentAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_SerialNumberMaterialDocument extends Base {
+    return class A_SerialNumberMaterialDocument extends Base {
         Material?: string;
         SerialNumber?: string;
         MaterialDocument?: string;
         MaterialDocumentItem?: string;
         MaterialDocumentYear?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_SerialNumberMaterialDocument extends _A_SerialNumberMaterialDocumentAspect(__.Entity) {}
 export class A_SerialNumberMaterialDocument_ extends Array<A_SerialNumberMaterialDocument> {}
-Object.defineProperty(A_SerialNumberMaterialDocument, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_SerialNumberMaterialDocument' })
-Object.defineProperty(A_SerialNumberMaterialDocument_, 'name', { value: 'API_MATERIAL_DOCUMENT_SRV.A_SerialNumberMaterialDocument' })
+Object.defineProperty(A_SerialNumberMaterialDocument, 'name', {
+    value: 'API_MATERIAL_DOCUMENT_SRV.A_SerialNumberMaterialDocument',
+});
+Object.defineProperty(A_SerialNumberMaterialDocument_, 'name', {
+    value: 'API_MATERIAL_DOCUMENT_SRV.A_SerialNumberMaterialDocument',
+});

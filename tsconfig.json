@@ -12,15 +12,9 @@
     "noErrorTruncation": true,
     "moduleResolution": "nodenext",
     "paths": {
-      "#cds-models/*": [
-        "./@cds-models/*/index.ts"
-      ]
+      "#cds-models/*": ["./@cds-models/*/index.ts"]
     }
   },
-  "include": [
-    "srv"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["srv"],
+  "exclude": ["node_modules"]
 }

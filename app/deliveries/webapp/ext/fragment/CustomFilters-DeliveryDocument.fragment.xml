@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+        <Input
+            id="DeliveryDocument"
+            core:require="{ handler: 'deliveries/ext/fragment/CustomFilters' }"
+            value="{path: 'filterValues>', type: 'sap.fe.macros.filter.type.Value'}"
+            valueState="{path: 'filterValues>', formatter: 'handler.onStringFilterFormatValue'}"
+            change="handler.filterDeliveryDocument"
+            placeholder="DeliveryDocument (and DeliveryDocumentItem)"
+        />
+</core:FragmentDefinition>

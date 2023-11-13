@@ -2,9 +2,9 @@
 import * as _API_OUTBOUND_DELIVERY_SRV_V2 from './../API_OUTBOUND_DELIVERY_SRV_V2';
 import * as __ from './../_';
 import * as _API_MATERIAL_DOCUMENT_SRV from './../API_MATERIAL_DOCUMENT_SRV';
-export default { name: 'TransferService' }
+export default { name: 'TransferService' };
 export function _OutboundDeliveryItemAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class OutboundDeliveryItem extends Base {
+    return class OutboundDeliveryItem extends Base {
         DeliveryDocument?: string;
         DeliveryDocumentItem?: string;
         ActualDeliveredQtyInBaseUnit?: number;
@@ -156,17 +156,16 @@ export function _OutboundDeliveryItemAspect<TBase extends new (...args: any[]) =
         to_DocumentFlow_SubsequentDocumentCategory?: string;
         to_SerialDeliveryItem?: __.Association.to<_API_OUTBOUND_DELIVERY_SRV_V2.A_SerialNmbrDelivery>;
         to_SerialDeliveryItem_MaintenanceItemObjectList?: number;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class OutboundDeliveryItem extends _OutboundDeliveryItemAspect(__.Entity) {}
 export class OutboundDeliveryItems extends Array<OutboundDeliveryItem> {}
-Object.defineProperty(OutboundDeliveryItem, 'name', { value: 'TransferService.OutboundDeliveryItems' })
-Object.defineProperty(OutboundDeliveryItems, 'name', { value: 'TransferService.OutboundDeliveryItems' })
+Object.defineProperty(OutboundDeliveryItem, 'name', { value: 'TransferService.OutboundDeliveryItems' });
+Object.defineProperty(OutboundDeliveryItems, 'name', { value: 'TransferService.OutboundDeliveryItems' });
 
 export function _OutboundDeliveryAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class OutboundDelivery extends Base {
+    return class OutboundDelivery extends Base {
         DeliveryDocument?: string;
         ActualDeliveryRoute?: string;
         Shippinglocationtimezone?: string;
@@ -287,17 +286,16 @@ export function _OutboundDeliveryAspect<TBase extends new (...args: any[]) => ob
         to_DeliveryDocumentText_DeliveryDocument?: string;
         to_DeliveryDocumentText_TextElement?: string;
         to_DeliveryDocumentText_Language?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class OutboundDelivery extends _OutboundDeliveryAspect(__.Entity) {}
 export class OutboundDeliveries extends Array<OutboundDelivery> {}
-Object.defineProperty(OutboundDelivery, 'name', { value: 'TransferService.OutboundDeliveries' })
-Object.defineProperty(OutboundDeliveries, 'name', { value: 'TransferService.OutboundDeliveries' })
+Object.defineProperty(OutboundDelivery, 'name', { value: 'TransferService.OutboundDeliveries' });
+Object.defineProperty(OutboundDeliveries, 'name', { value: 'TransferService.OutboundDeliveries' });
 
 export function _MaterialDocAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class MaterialDoc extends Base {
+    return class MaterialDoc extends Base {
         MaterialDocumentYear?: string;
         MaterialDocument?: string;
         InventoryTransactionType?: string;
@@ -316,17 +314,16 @@ export function _MaterialDocAspect<TBase extends new (...args: any[]) => object>
         to_MaterialDocumentItem_MaterialDocumentYear?: string;
         to_MaterialDocumentItem_MaterialDocument?: string;
         to_MaterialDocumentItem_MaterialDocumentItem?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class MaterialDoc extends _MaterialDocAspect(__.Entity) {}
 export class MaterialDocs extends Array<MaterialDoc> {}
-Object.defineProperty(MaterialDoc, 'name', { value: 'TransferService.MaterialDocs' })
-Object.defineProperty(MaterialDocs, 'name', { value: 'TransferService.MaterialDocs' })
+Object.defineProperty(MaterialDoc, 'name', { value: 'TransferService.MaterialDocs' });
+Object.defineProperty(MaterialDocs, 'name', { value: 'TransferService.MaterialDocs' });
 
 export function _MaterialDocItemAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class MaterialDocItem extends Base {
+    return class MaterialDocItem extends Base {
         MaterialDocumentYear?: string;
         MaterialDocument?: string;
         MaterialDocumentItem?: string;
@@ -418,27 +415,25 @@ export function _MaterialDocItemAspect<TBase extends new (...args: any[]) => obj
         to_SerialNumbers_MaterialDocument?: string;
         to_SerialNumbers_MaterialDocumentItem?: string;
         to_SerialNumbers_MaterialDocumentYear?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class MaterialDocItem extends _MaterialDocItemAspect(__.Entity) {}
 export class MaterialDocItems extends Array<MaterialDocItem> {}
-Object.defineProperty(MaterialDocItem, 'name', { value: 'TransferService.MaterialDocItems' })
-Object.defineProperty(MaterialDocItems, 'name', { value: 'TransferService.MaterialDocItems' })
+Object.defineProperty(MaterialDocItem, 'name', { value: 'TransferService.MaterialDocItems' });
+Object.defineProperty(MaterialDocItems, 'name', { value: 'TransferService.MaterialDocItems' });
 
 export function _SerialNumberAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class SerialNumber extends Base {
+    return class SerialNumber extends Base {
         Material?: string;
         SerialNumber?: string;
         MaterialDocument?: string;
         MaterialDocumentItem?: string;
         MaterialDocumentYear?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class SerialNumber extends _SerialNumberAspect(__.Entity) {}
 export class SerialNumbers extends Array<SerialNumber> {}
-Object.defineProperty(SerialNumber, 'name', { value: 'TransferService.SerialNumbers' })
-Object.defineProperty(SerialNumbers, 'name', { value: 'TransferService.SerialNumbers' })
+Object.defineProperty(SerialNumber, 'name', { value: 'TransferService.SerialNumbers' });
+Object.defineProperty(SerialNumbers, 'name', { value: 'TransferService.SerialNumbers' });

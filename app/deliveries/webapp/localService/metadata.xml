@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml">
+        <edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="DeliveryService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="OutboundDeliveryItems" EntityType="DeliveryService.OutboundDeliveryItems"/>
+                <EntitySet Name="OutboundDeliveries" EntityType="DeliveryService.OutboundDeliveries">
+                    <NavigationPropertyBinding Path="to_DeliveryDocumentItem" Target="OutboundDeliveryItems"/>
+                </EntitySet>
+            </EntityContainer>
+            <EntityType Name="OutboundDeliveryItems">
+                <Key>
+                    <PropertyRef Name="DeliveryDocument"/>
+                    <PropertyRef Name="DeliveryDocumentItem"/>
+                </Key>
+                <Property Name="DeliveryDocument" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="DeliveryDocumentItem" Type="Edm.String" MaxLength="6" Nullable="false"/>
+                <Property Name="DeliveryDocumentItemText" Type="Edm.String" MaxLength="40"/>
+                <Property Name="ActualDeliveredQtyInBaseUnit" Type="Edm.Decimal" Scale="3" Precision="13"/>
+                <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+                <Property Name="Material" Type="Edm.String" MaxLength="40"/>
+                <Property Name="Batch" Type="Edm.String" MaxLength="10"/>
+                <Property Name="StorageLocation" Type="Edm.String" MaxLength="4"/>
+                <Property Name="Plant" Type="Edm.String" MaxLength="4"/>
+                <Property Name="CreationDate" Type="Edm.DateTimeOffset" Precision="7"/>
+            </EntityType>
+            <EntityType Name="OutboundDeliveries">
+                <Key>
+                    <PropertyRef Name="DeliveryDocument"/>
+                </Key>
+                <Property Name="DeliveryDocument" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="CreatedByUser" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CreationDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="CreationTime" Type="Edm.TimeOfDay"/>
+                <Property Name="DeliveryDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="DocumentDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <NavigationProperty Name="to_DeliveryDocumentItem" Type="Collection(DeliveryService.OutboundDeliveryItems)"/>
+            </EntityType>
+            <Annotations Target="DeliveryService.EntityContainer/OutboundDeliveryItems">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record Type="Capabilities.DeleteRestrictionsType">
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record Type="Capabilities.InsertRestrictionsType">
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record Type="Capabilities.UpdateRestrictionsType">
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="DeliveryService.EntityContainer/OutboundDeliveries">
+                <Annotation Term="Capabilities.DeleteRestrictions">
+                    <Record Type="Capabilities.DeleteRestrictionsType">
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.InsertRestrictions">
+                    <Record Type="Capabilities.InsertRestrictionsType">
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.UpdateRestrictions">
+                    <Record Type="Capabilities.UpdateRestrictionsType">
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

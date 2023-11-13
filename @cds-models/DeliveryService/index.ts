@@ -1,9 +1,9 @@
 // This is an automatically generated file. Please do not change its contents manually!
 import * as _API_OUTBOUND_DELIVERY_SRV_V2 from './../API_OUTBOUND_DELIVERY_SRV_V2';
 import * as __ from './../_';
-export default { name: 'DeliveryService' }
+export default { name: 'DeliveryService' };
 export function _OutboundDeliveryItemAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class OutboundDeliveryItem extends Base {
+    return class OutboundDeliveryItem extends Base {
         DeliveryDocument?: string;
         DeliveryDocumentItem?: string;
         ActualDeliveredQtyInBaseUnit?: number;
@@ -155,17 +155,16 @@ export function _OutboundDeliveryItemAspect<TBase extends new (...args: any[]) =
         to_DocumentFlow_SubsequentDocumentCategory?: string;
         to_SerialDeliveryItem?: __.Association.to<_API_OUTBOUND_DELIVERY_SRV_V2.A_SerialNmbrDelivery>;
         to_SerialDeliveryItem_MaintenanceItemObjectList?: number;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class OutboundDeliveryItem extends _OutboundDeliveryItemAspect(__.Entity) {}
 export class OutboundDeliveryItems extends Array<OutboundDeliveryItem> {}
-Object.defineProperty(OutboundDeliveryItem, 'name', { value: 'DeliveryService.OutboundDeliveryItems' })
-Object.defineProperty(OutboundDeliveryItems, 'name', { value: 'DeliveryService.OutboundDeliveryItems' })
+Object.defineProperty(OutboundDeliveryItem, 'name', { value: 'DeliveryService.OutboundDeliveryItems' });
+Object.defineProperty(OutboundDeliveryItems, 'name', { value: 'DeliveryService.OutboundDeliveryItems' });
 
 export function _OutboundDeliveryAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class OutboundDelivery extends Base {
+    return class OutboundDelivery extends Base {
         DeliveryDocument?: string;
         ActualDeliveryRoute?: string;
         Shippinglocationtimezone?: string;
@@ -286,11 +285,10 @@ export function _OutboundDeliveryAspect<TBase extends new (...args: any[]) => ob
         to_DeliveryDocumentText_DeliveryDocument?: string;
         to_DeliveryDocumentText_TextElement?: string;
         to_DeliveryDocumentText_Language?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class OutboundDelivery extends _OutboundDeliveryAspect(__.Entity) {}
 export class OutboundDeliveries extends Array<OutboundDelivery> {}
-Object.defineProperty(OutboundDelivery, 'name', { value: 'DeliveryService.OutboundDeliveries' })
-Object.defineProperty(OutboundDeliveries, 'name', { value: 'DeliveryService.OutboundDeliveries' })
+Object.defineProperty(OutboundDelivery, 'name', { value: 'DeliveryService.OutboundDeliveries' });
+Object.defineProperty(OutboundDeliveries, 'name', { value: 'DeliveryService.OutboundDeliveries' });

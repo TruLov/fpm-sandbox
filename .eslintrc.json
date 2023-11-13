@@ -3,7 +3,8 @@
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:@sap/cds/recommended", "prettier"],
   "parserOptions": {
     "ecmaVersion": 2022,
-    "sourceType": "module"
+    "sourceType": "module",
+    "priject": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
   "env": {

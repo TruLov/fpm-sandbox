@@ -1,6 +1,6 @@
 // This is an automatically generated file. Please do not change its contents manually!
 import * as __ from './../_';
-export default { name: 'API_OUTBOUND_DELIVERY_SRV_V2' }
+export default { name: 'API_OUTBOUND_DELIVERY_SRV_V2' };
 export type HuReturn = {
     SystemMessageIdentification?: string;
     SystemMessageNumber?: string;
@@ -47,7 +47,7 @@ export type Return = {
     CollectiveProcessingType?: string;
 };
 export function _A_OutbDeliveryItemTextAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryItemText extends Base {
+    return class A_OutbDeliveryItemText extends Base {
         DeliveryDocument?: string;
         DeliveryDocumentItem?: string;
         TextElement?: string;
@@ -55,34 +55,38 @@ export function _A_OutbDeliveryItemTextAspect<TBase extends new (...args: any[])
         TextElementDescription?: string;
         TextElementText?: string;
         DeliveryLongTextIsFormatted?: boolean;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_OutbDeliveryItemText extends _A_OutbDeliveryItemTextAspect(__.Entity) {}
 export class A_OutbDeliveryItemText_ extends Array<A_OutbDeliveryItemText> {}
-Object.defineProperty(A_OutbDeliveryItemText, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItemText' })
-Object.defineProperty(A_OutbDeliveryItemText_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItemText' })
+Object.defineProperty(A_OutbDeliveryItemText, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItemText' });
+Object.defineProperty(A_OutbDeliveryItemText_, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItemText',
+});
 
 export function _A_OutbDeliveryHeaderTextAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryHeaderText extends Base {
+    return class A_OutbDeliveryHeaderText extends Base {
         DeliveryDocument?: string;
         TextElement?: string;
         Language?: string;
         TextElementDescription?: string;
         TextElementText?: string;
         DeliveryLongTextIsFormatted?: boolean;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_OutbDeliveryHeaderText extends _A_OutbDeliveryHeaderTextAspect(__.Entity) {}
 export class A_OutbDeliveryHeaderText_ extends Array<A_OutbDeliveryHeaderText> {}
-Object.defineProperty(A_OutbDeliveryHeaderText, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeaderText' })
-Object.defineProperty(A_OutbDeliveryHeaderText_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeaderText' })
+Object.defineProperty(A_OutbDeliveryHeaderText, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeaderText',
+});
+Object.defineProperty(A_OutbDeliveryHeaderText_, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeaderText',
+});
 
 export function _A_HandlingUnitHeaderDeliveryAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_HandlingUnitHeaderDelivery extends Base {
+    return class A_HandlingUnitHeaderDelivery extends Base {
         HandlingUnitInternalId?: string;
         CreatedByUser?: string;
         CreationDate?: string;
@@ -129,17 +133,20 @@ export function _A_HandlingUnitHeaderDeliveryAspect<TBase extends new (...args: 
         to_HandlingUnitItemDelivery?: __.Association.to.many<A_HandlingUnitItemDelivery_>;
         to_HandlingUnitItemDelivery_HandlingUnitInternalId?: string;
         to_HandlingUnitItemDelivery_HandlingUnitItem?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_HandlingUnitHeaderDelivery extends _A_HandlingUnitHeaderDeliveryAspect(__.Entity) {}
 export class A_HandlingUnitHeaderDelivery_ extends Array<A_HandlingUnitHeaderDelivery> {}
-Object.defineProperty(A_HandlingUnitHeaderDelivery, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitHeaderDelivery' })
-Object.defineProperty(A_HandlingUnitHeaderDelivery_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitHeaderDelivery' })
+Object.defineProperty(A_HandlingUnitHeaderDelivery, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitHeaderDelivery',
+});
+Object.defineProperty(A_HandlingUnitHeaderDelivery_, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitHeaderDelivery',
+});
 
 export function _A_HandlingUnitItemDeliveryAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_HandlingUnitItemDelivery extends Base {
+    return class A_HandlingUnitItemDelivery extends Base {
         HandlingUnitInternalId?: string;
         HandlingUnitItem?: string;
         Batch?: string;
@@ -156,17 +163,20 @@ export function _A_HandlingUnitItemDeliveryAspect<TBase extends new (...args: an
         MaterialByCustomer?: string;
         MaterialName?: string;
         SerialNumberProfile?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_HandlingUnitItemDelivery extends _A_HandlingUnitItemDeliveryAspect(__.Entity) {}
 export class A_HandlingUnitItemDelivery_ extends Array<A_HandlingUnitItemDelivery> {}
-Object.defineProperty(A_HandlingUnitItemDelivery, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitItemDelivery' })
-Object.defineProperty(A_HandlingUnitItemDelivery_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitItemDelivery' })
+Object.defineProperty(A_HandlingUnitItemDelivery, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitItemDelivery',
+});
+Object.defineProperty(A_HandlingUnitItemDelivery_, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_HandlingUnitItemDelivery',
+});
 
 export function _A_OutbDeliveryAddress2Aspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryAddress2 extends Base {
+    return class A_OutbDeliveryAddress2 extends Base {
         DeliveryDocument?: string;
         PartnerFunction?: string;
         DeliveryVersion?: string;
@@ -217,17 +227,18 @@ export function _A_OutbDeliveryAddress2Aspect<TBase extends new (...args: any[])
         StreetSuffixName?: string;
         TaxJurisdiction?: string;
         TransportZone?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_OutbDeliveryAddress2 extends _A_OutbDeliveryAddress2Aspect(__.Entity) {}
 export class A_OutbDeliveryAddress2_ extends Array<A_OutbDeliveryAddress2> {}
-Object.defineProperty(A_OutbDeliveryAddress2, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress2' })
-Object.defineProperty(A_OutbDeliveryAddress2_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress2' })
+Object.defineProperty(A_OutbDeliveryAddress2, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress2' });
+Object.defineProperty(A_OutbDeliveryAddress2_, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress2',
+});
 
 export function _A_OutbDeliveryItemAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryItem extends Base {
+    return class A_OutbDeliveryItem extends Base {
         DeliveryDocument?: string;
         DeliveryDocumentItem?: string;
         ActualDeliveredQtyInBaseUnit?: number;
@@ -379,18 +390,32 @@ export function _A_OutbDeliveryItemAspect<TBase extends new (...args: any[]) => 
         to_DocumentFlow_SubsequentDocumentCategory?: string;
         to_SerialDeliveryItem?: __.Association.to<A_SerialNmbrDelivery>;
         to_SerialDeliveryItem_MaintenanceItemObjectList?: number;
-      static actions: {
-        CreateBatchSplitItem: { (PickQuantityInSalesUOM: number, Batch: string, ActualDeliveryQuantity: number, DeliveryQuantityUnit: string): CreatedDeliveryItem, __parameters: {PickQuantityInSalesUOM: number, Batch: string, ActualDeliveryQuantity: number, DeliveryQuantityUnit: string}, __returns: CreatedDeliveryItem }
-    }
-  };
+        static actions: {
+            CreateBatchSplitItem: {
+                (
+                    PickQuantityInSalesUOM: number,
+                    Batch: string,
+                    ActualDeliveryQuantity: number,
+                    DeliveryQuantityUnit: string
+                ): CreatedDeliveryItem;
+                __parameters: {
+                    PickQuantityInSalesUOM: number;
+                    Batch: string;
+                    ActualDeliveryQuantity: number;
+                    DeliveryQuantityUnit: string;
+                };
+                __returns: CreatedDeliveryItem;
+            };
+        };
+    };
 }
 export class A_OutbDeliveryItem extends _A_OutbDeliveryItemAspect(__.Entity) {}
 export class A_OutbDeliveryItem_ extends Array<A_OutbDeliveryItem> {}
-Object.defineProperty(A_OutbDeliveryItem, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItem' })
-Object.defineProperty(A_OutbDeliveryItem_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItem' })
+Object.defineProperty(A_OutbDeliveryItem, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItem' });
+Object.defineProperty(A_OutbDeliveryItem_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryItem' });
 
 export function _A_OutbDeliveryHeaderAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryHeader extends Base {
+    return class A_OutbDeliveryHeader extends Base {
         DeliveryDocument?: string;
         ActualDeliveryRoute?: string;
         Shippinglocationtimezone?: string;
@@ -511,31 +536,97 @@ export function _A_OutbDeliveryHeaderAspect<TBase extends new (...args: any[]) =
         to_DeliveryDocumentText_DeliveryDocument?: string;
         to_DeliveryDocumentText_TextElement?: string;
         to_DeliveryDocumentText_Language?: string;
-      static actions: {
-        DeleteAllHandlingUnitsFromDelivery: { (): HuReturn, __parameters: {}, __returns: HuReturn }
-        PickAndBatchSplitOneItem: { (DeliveryDocumentItem: string, Batch: string, SplitQuantity: number, SplitQuantityUnit: string): Array<PickingReport>, __parameters: {DeliveryDocumentItem: string, Batch: string, SplitQuantity: number, SplitQuantityUnit: string}, __returns: Array<PickingReport> }
-        SetPickingQuantityWithBaseQuantity: { (ActualDeliveredQtyInBaseUnit: number, BaseUnit: string, DeliveryDocumentItem: string): Array<PickingReport>, __parameters: {ActualDeliveredQtyInBaseUnit: number, BaseUnit: string, DeliveryDocumentItem: string}, __returns: Array<PickingReport> }
-        AddSerialNumberToDeliveryItem: { (DeliveryDocumentItem: string, SerialNumber: string): Array<PickingReport>, __parameters: {DeliveryDocumentItem: string, SerialNumber: string}, __returns: Array<PickingReport> }
-        DeleteSerialNumberFromDeliveryItem: { (DeliveryDocumentItem: string, SerialNumber: string): Array<PickingReport>, __parameters: {DeliveryDocumentItem: string, SerialNumber: string}, __returns: Array<PickingReport> }
-        DeleteAllSerialNumbersFromDeliveryItem: { (DeliveryDocumentItem: string): Array<PickingReport>, __parameters: {DeliveryDocumentItem: string}, __returns: Array<PickingReport> }
-        PostGoodsIssue: { (): Array<PickingReport>, __parameters: {}, __returns: Array<PickingReport> }
-        ReverseGoodsIssue: { (ActualGoodsMovementDate: string): Array<Return>, __parameters: {ActualGoodsMovementDate: string}, __returns: Array<Return> }
-        ConfirmPickingAllItems: { (): Array<PickingReport>, __parameters: {}, __returns: Array<PickingReport> }
-        ConfirmPickingOneItem: { (DeliveryDocumentItem: string): Array<PickingReport>, __parameters: {DeliveryDocumentItem: string}, __returns: Array<PickingReport> }
-        PickAllItems: { (): Array<PickingReport>, __parameters: {}, __returns: Array<PickingReport> }
-        PickOneItem: { (DeliveryDocumentItem: string): Array<PickingReport>, __parameters: {DeliveryDocumentItem: string}, __returns: Array<PickingReport> }
-        PickOneItemWithSalesQuantity: { (DeliveryQuantityUnit: string, DeliveryDocumentItem: string, ActualDeliveryQuantity: number): Array<PickingReport>, __parameters: {DeliveryQuantityUnit: string, DeliveryDocumentItem: string, ActualDeliveryQuantity: number}, __returns: Array<PickingReport> }
-        PickOneItemWithBaseQuantity: { (BaseUnit: string, ActualDeliveredQtyInBaseUnit: number, DeliveryDocumentItem: string): Array<PickingReport>, __parameters: {BaseUnit: string, ActualDeliveredQtyInBaseUnit: number, DeliveryDocumentItem: string}, __returns: Array<PickingReport> }
-    }
-  };
+        static actions: {
+            DeleteAllHandlingUnitsFromDelivery: { (): HuReturn; __parameters: {}; __returns: HuReturn };
+            PickAndBatchSplitOneItem: {
+                (
+                    DeliveryDocumentItem: string,
+                    Batch: string,
+                    SplitQuantity: number,
+                    SplitQuantityUnit: string
+                ): Array<PickingReport>;
+                __parameters: {
+                    DeliveryDocumentItem: string;
+                    Batch: string;
+                    SplitQuantity: number;
+                    SplitQuantityUnit: string;
+                };
+                __returns: Array<PickingReport>;
+            };
+            SetPickingQuantityWithBaseQuantity: {
+                (
+                    ActualDeliveredQtyInBaseUnit: number,
+                    BaseUnit: string,
+                    DeliveryDocumentItem: string
+                ): Array<PickingReport>;
+                __parameters: { ActualDeliveredQtyInBaseUnit: number; BaseUnit: string; DeliveryDocumentItem: string };
+                __returns: Array<PickingReport>;
+            };
+            AddSerialNumberToDeliveryItem: {
+                (DeliveryDocumentItem: string, SerialNumber: string): Array<PickingReport>;
+                __parameters: { DeliveryDocumentItem: string; SerialNumber: string };
+                __returns: Array<PickingReport>;
+            };
+            DeleteSerialNumberFromDeliveryItem: {
+                (DeliveryDocumentItem: string, SerialNumber: string): Array<PickingReport>;
+                __parameters: { DeliveryDocumentItem: string; SerialNumber: string };
+                __returns: Array<PickingReport>;
+            };
+            DeleteAllSerialNumbersFromDeliveryItem: {
+                (DeliveryDocumentItem: string): Array<PickingReport>;
+                __parameters: { DeliveryDocumentItem: string };
+                __returns: Array<PickingReport>;
+            };
+            PostGoodsIssue: { (): Array<PickingReport>; __parameters: {}; __returns: Array<PickingReport> };
+            ReverseGoodsIssue: {
+                (ActualGoodsMovementDate: string): Array<Return>;
+                __parameters: { ActualGoodsMovementDate: string };
+                __returns: Array<Return>;
+            };
+            ConfirmPickingAllItems: { (): Array<PickingReport>; __parameters: {}; __returns: Array<PickingReport> };
+            ConfirmPickingOneItem: {
+                (DeliveryDocumentItem: string): Array<PickingReport>;
+                __parameters: { DeliveryDocumentItem: string };
+                __returns: Array<PickingReport>;
+            };
+            PickAllItems: { (): Array<PickingReport>; __parameters: {}; __returns: Array<PickingReport> };
+            PickOneItem: {
+                (DeliveryDocumentItem: string): Array<PickingReport>;
+                __parameters: { DeliveryDocumentItem: string };
+                __returns: Array<PickingReport>;
+            };
+            PickOneItemWithSalesQuantity: {
+                (
+                    DeliveryQuantityUnit: string,
+                    DeliveryDocumentItem: string,
+                    ActualDeliveryQuantity: number
+                ): Array<PickingReport>;
+                __parameters: {
+                    DeliveryQuantityUnit: string;
+                    DeliveryDocumentItem: string;
+                    ActualDeliveryQuantity: number;
+                };
+                __returns: Array<PickingReport>;
+            };
+            PickOneItemWithBaseQuantity: {
+                (
+                    BaseUnit: string,
+                    ActualDeliveredQtyInBaseUnit: number,
+                    DeliveryDocumentItem: string
+                ): Array<PickingReport>;
+                __parameters: { BaseUnit: string; ActualDeliveredQtyInBaseUnit: number; DeliveryDocumentItem: string };
+                __returns: Array<PickingReport>;
+            };
+        };
+    };
 }
 export class A_OutbDeliveryHeader extends _A_OutbDeliveryHeaderAspect(__.Entity) {}
 export class A_OutbDeliveryHeader_ extends Array<A_OutbDeliveryHeader> {}
-Object.defineProperty(A_OutbDeliveryHeader, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeader' })
-Object.defineProperty(A_OutbDeliveryHeader_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeader' })
+Object.defineProperty(A_OutbDeliveryHeader, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeader' });
+Object.defineProperty(A_OutbDeliveryHeader_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryHeader' });
 
 export function _A_OutbDeliveryDocFlowAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryDocFlow extends Base {
+    return class A_OutbDeliveryDocFlow extends Base {
         PrecedingDocument?: string;
         PrecedingDocumentItem?: string;
         SubsequentDocumentCategory?: string;
@@ -546,17 +637,16 @@ export function _A_OutbDeliveryDocFlowAspect<TBase extends new (...args: any[]) 
         SubsequentDocumentItem?: string;
         SDFulfillmentCalculationRule?: string;
         TransferOrderInWrhsMgmtIsConfd?: boolean;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_OutbDeliveryDocFlow extends _A_OutbDeliveryDocFlowAspect(__.Entity) {}
 export class A_OutbDeliveryDocFlow_ extends Array<A_OutbDeliveryDocFlow> {}
-Object.defineProperty(A_OutbDeliveryDocFlow, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryDocFlow' })
-Object.defineProperty(A_OutbDeliveryDocFlow_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryDocFlow' })
+Object.defineProperty(A_OutbDeliveryDocFlow, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryDocFlow' });
+Object.defineProperty(A_OutbDeliveryDocFlow_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryDocFlow' });
 
 export function _A_MaintenanceItemObjectAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_MaintenanceItemObject extends Base {
+    return class A_MaintenanceItemObject extends Base {
         MaintenanceItemObject?: number;
         MaintenanceItemObjectList?: number;
         Assembly?: string;
@@ -566,17 +656,20 @@ export function _A_MaintenanceItemObjectAspect<TBase extends new (...args: any[]
         MaintObjectLocAcctAssgmtNmbr?: string;
         Material?: string;
         SerialNumber?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_MaintenanceItemObject extends _A_MaintenanceItemObjectAspect(__.Entity) {}
 export class A_MaintenanceItemObject_ extends Array<A_MaintenanceItemObject> {}
-Object.defineProperty(A_MaintenanceItemObject, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_MaintenanceItemObject' })
-Object.defineProperty(A_MaintenanceItemObject_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_MaintenanceItemObject' })
+Object.defineProperty(A_MaintenanceItemObject, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_MaintenanceItemObject',
+});
+Object.defineProperty(A_MaintenanceItemObject_, 'name', {
+    value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_MaintenanceItemObject',
+});
 
 export function _A_SerialNmbrDeliveryAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_SerialNmbrDelivery extends Base {
+    return class A_SerialNmbrDelivery extends Base {
         MaintenanceItemObjectList?: number;
         DeliveryDate?: string;
         DeliveryDocument?: string;
@@ -585,17 +678,16 @@ export function _A_SerialNmbrDeliveryAspect<TBase extends new (...args: any[]) =
         to_MaintenanceItemObject?: __.Association.to.many<A_MaintenanceItemObject_>;
         to_MaintenanceItemObject_MaintenanceItemObject?: number;
         to_MaintenanceItemObject_MaintenanceItemObjectList?: number;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_SerialNmbrDelivery extends _A_SerialNmbrDeliveryAspect(__.Entity) {}
 export class A_SerialNmbrDelivery_ extends Array<A_SerialNmbrDelivery> {}
-Object.defineProperty(A_SerialNmbrDelivery, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_SerialNmbrDelivery' })
-Object.defineProperty(A_SerialNmbrDelivery_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_SerialNmbrDelivery' })
+Object.defineProperty(A_SerialNmbrDelivery, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_SerialNmbrDelivery' });
+Object.defineProperty(A_SerialNmbrDelivery_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_SerialNmbrDelivery' });
 
 export function _A_OutbDeliveryPartnerAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryPartner extends Base {
+    return class A_OutbDeliveryPartner extends Base {
         PartnerFunction?: string;
         SDDocument?: string;
         AddressID?: string;
@@ -613,17 +705,16 @@ export function _A_OutbDeliveryPartnerAspect<TBase extends new (...args: any[]) 
         to_Address2?: __.Association.to<A_OutbDeliveryAddress2>;
         to_Address2_DeliveryDocument?: string;
         to_Address2_PartnerFunction?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_OutbDeliveryPartner extends _A_OutbDeliveryPartnerAspect(__.Entity) {}
 export class A_OutbDeliveryPartner_ extends Array<A_OutbDeliveryPartner> {}
-Object.defineProperty(A_OutbDeliveryPartner, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryPartner' })
-Object.defineProperty(A_OutbDeliveryPartner_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryPartner' })
+Object.defineProperty(A_OutbDeliveryPartner, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryPartner' });
+Object.defineProperty(A_OutbDeliveryPartner_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryPartner' });
 
 export function _A_OutbDeliveryAddressAspect<TBase extends new (...args: any[]) => object>(Base: TBase) {
-  return class A_OutbDeliveryAddress extends Base {
+    return class A_OutbDeliveryAddress extends Base {
         AddressID?: string;
         POBox?: string;
         POBoxDeviatingCountry?: string;
@@ -672,11 +763,10 @@ export function _A_OutbDeliveryAddressAspect<TBase extends new (...args: any[]) 
         StreetSuffixName?: string;
         TaxJurisdiction?: string;
         TransportZone?: string;
-      static actions: {
-    }
-  };
+        static actions: {};
+    };
 }
 export class A_OutbDeliveryAddress extends _A_OutbDeliveryAddressAspect(__.Entity) {}
 export class A_OutbDeliveryAddress_ extends Array<A_OutbDeliveryAddress> {}
-Object.defineProperty(A_OutbDeliveryAddress, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress' })
-Object.defineProperty(A_OutbDeliveryAddress_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress' })
+Object.defineProperty(A_OutbDeliveryAddress, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress' });
+Object.defineProperty(A_OutbDeliveryAddress_, 'name', { value: 'API_OUTBOUND_DELIVERY_SRV_V2.A_OutbDeliveryAddress' });
