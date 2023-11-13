@@ -1,0 +1,47 @@
+{
+  "name": "fpm-sandbox",
+  "version": "1.0.0",
+  "description": "FPM sandbox - collection of prototypes, or whatever...",
+  "repository": "https://github.com/TruLov/fpm-sandbox",
+  "license": "LGPL-3.0-only",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/http-client": "^3.7.0",
+    "@sap-cloud-sdk/resilience": "^3.7.0",
+    "@sap/cds": "^7",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-typer": ">=0.1",
+    "@cap-js/sqlite": "^1",
+    "@sap/eslint-plugin-cds": "^2.6.4",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build:dts": "npx @cap-js/cds-typer '*' --outputDirectory @cds-models --logLevel TRACE",
+    "dev": "cds-ts watch",
+    "format": "prettier --write --ignore-unknown .",
+    "start": "cds-serve"
+  },
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
+  },
+  "cds": {
+    "requires": {
+      "API_MATERIAL_DOCUMENT_SRV": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_MATERIAL_DOCUMENT_SRV"
+      },
+      "API_OUTBOUND_DELIVERY_SRV_V2": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_OUTBOUND_DELIVERY_SRV_V2"
+      }
+    }
+  }
+}

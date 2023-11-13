@@ -1,0 +1,18 @@
+{
+  "requires": {
+    "API_MATERIAL_DOCUMENT_SRV": {
+      "[development]": {
+        "credentials": {
+          "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_MATERIAL_DOCUMENT_SRV"
+        }
+      }
+    },
+    "API_OUTBOUND_DELIVERY_SRV_V2": {
+      "[development]": {
+        "credentials": {
+          "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_OUTBOUND_DELIVERY_SRV;v=0002"
+        }
+      }
+    }
+  }
+}

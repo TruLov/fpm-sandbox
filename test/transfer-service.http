@@ -1,0 +1,13 @@
+@host=http://localhost
+@port=4004
+@path=odata/v4/deliveries
+@api={{host}}:{{port}}/{{path}}
+
+### @name metadata
+GET {{api}}/$metadata
+
+### @name test
+GET {{api}}/OutboundDeliveryItems?$top=30&$filter=Batch ne ''
+
+### @name singleDeliveryItem
+GET {{api}}/OutboundDeliveryItems(DeliveryDocument='80000000',DeliveryDocumentItem='10')
