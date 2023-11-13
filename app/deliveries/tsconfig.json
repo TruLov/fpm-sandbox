@@ -11,7 +11,7 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "deliveries/*": ["./webapp/*"]
+      "testlr/*": ["./webapp/*"]
     },
     "typeRoots": ["../../node_modules/@types", "../../node_modules/@sapui5/types"]
   },

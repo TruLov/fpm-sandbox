@@ -52,6 +52,7 @@
         "sap.ui.core": {},
         "sap.ushell": {},
         "sap.fe.templates": {},
+        "sap.fe.macros": {},
         "sap.f": {}
       }
     },
@@ -85,23 +86,16 @@
       "css": []
     },
     "routing": {
-      "config": {
-        "flexibleColumnLayout": {
-          "defaultTwoColumnLayoutType": "TwoColumnsBeginExpanded",
-          "defaultThreeColumnLayoutType": "ThreeColumnsMidExpanded"
-        },
-        "routerClass": "sap.f.routing.Router"
-      },
       "routes": [
         {
           "pattern": ":?query:",
           "name": "OutboundDeliveryItemsList",
-          "target": ["OutboundDeliveryItemsList"]
+          "target": "OutboundDeliveryItemsList"
         },
         {
           "pattern": "OutboundDeliveryItems({key}):?query:",
           "name": "OutboundDeliveryItemsObjectPage",
-          "target": ["OutboundDeliveryItemsList", "OutboundDeliveryItemsObjectPage"]
+          "target": "OutboundDeliveryItemsObjectPage"
         }
       ],
       "targets": {
@@ -122,11 +116,12 @@
               },
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.SelectionFields": {
+                  "showClearButton": true,
                   "filterFields": {
                     "DeliveryDocument": {
                       "label": "DeliveryDocument",
                       "property": "DeliveryDocument",
-                      "template": "deliveries.ext.fragment.CustomFilters-DeliveryDocument",
+                      "template": "deliveries.ext.fragment.CustomFilter-DeliveryDocument",
                       "required": true,
                       "position": {
                         "anchor": "DeliveryDocumentItem",
@@ -134,12 +129,23 @@
                       }
                     }
                   }
+                },
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "columns": {
+                    "Quantity": {
+                      "header": "Quantity",
+                      "width": "10em",
+                      "position": {
+                        "anchor": "DataField::BaseUnit",
+                        "placement": "After"
+                      },
+                      "template": "deliveries.ext.fragment.CustomColumn-Quantity"
+                    }
+                  }
                 }
               }
             }
-          },
-          "controlAggregation": "beginColumnPages",
-          "contextPattern": ""
+          }
         },
         "OutboundDeliveryItemsObjectPage": {
           "type": "Component",
@@ -150,17 +156,18 @@
               "editableHeaderContent": false,
               "contextPath": "/OutboundDeliveryItems"
             }
-          },
-          "controlAggregation": "midColumnPages",
-          "contextPattern": "/OutboundDeliveryItems({key})"
+          }
         }
       }
     },
-    "rootView": {
-      "viewName": "sap.fe.templates.RootContainer.view.Fcl",
-      "type": "XML",
-      "async": true,
-      "id": "appRootView"
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.fe.templates.ListReport.ListReportController": {
+            "controllerName": "deliveries.ext.controller.CustomController"
+          }
+        }
+      }
     }
   },
   "sap.fiori": {

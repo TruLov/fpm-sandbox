@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Input
+        id="Quantity"
+        core:require="{ handler: 'deliveries/ext/fragment/CustomColumns' }"
+        editable="true"
+        value="{ path: 'ActualDeliveredQtyInBaseUnit', mode: 'sap.ui.model.BindingMode.OneWay' }"
+        change="handler.onChangeQuantity"
+    />
+</core:FragmentDefinition>

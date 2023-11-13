@@ -18,11 +18,6 @@ annotate service.OutboundDeliveryItems with @(UI.LineItem: [
     },
     {
         $Type: 'UI.DataField',
-        Label: 'ActualDeliveredQtyInBaseUnit',
-        Value: ActualDeliveredQtyInBaseUnit,
-    },
-    {
-        $Type: 'UI.DataField',
         Label: 'BaseUnit',
         Value: BaseUnit,
     },
