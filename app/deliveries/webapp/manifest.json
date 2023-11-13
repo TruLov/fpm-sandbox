@@ -141,6 +141,15 @@
                       },
                       "template": "deliveries.ext.fragment.CustomColumn-Quantity"
                     }
+                  },
+                  "actions": {
+                    "submit": {
+                      "press": "deliveries.ext.controller.CustomActions.submit",
+                      "visible": true,
+                      "enabled": true,
+                      "requiresSelection": true,
+                      "text": "Submit"
+                    }
                   }
                 }
               }
